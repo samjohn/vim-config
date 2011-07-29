@@ -112,7 +112,7 @@ set history=1024
 set incsearch
 
 "no wrapping
-set nowrap
+" set nowrap
 
 "line numbers
 set number
