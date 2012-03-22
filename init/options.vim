@@ -19,6 +19,8 @@ set wildignore+=tmp/**             " ...Also tmp files.
 set wildignore+=public/uploads/**  " ...Also uploads.
 set wildignore+=public/images/**   " ...Also images.
 set wildignore+=vendor/**          " ...Also vendor.
+set wildignore+=public/javascripts/compiled/**          " ...compiled js.
+set wildignore+=spec/javascripts/compiled/**          " ...compiled js specs.
 
 set list                        " Show whitespace
 if has("gui_running")

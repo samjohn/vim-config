@@ -51,6 +51,6 @@ function! RunTests()
       let testFilename = testFilename.folder."/"
     endfor
     let testFilename = testFilename.shortenedName."_spec.rb"
-    call RunTestTool("bundle exec rspec ".testFilename)
+    call RunTestTool("rspec ".testFilename)
   endif
 endfunction

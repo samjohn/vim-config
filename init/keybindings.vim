@@ -4,6 +4,8 @@
 let mapleader = ","
 let maplocalleader = ";"
 
+" kj - The intuitive way to get out of insert mode
+imap kj         <Esc>
 " Make Y consistent with D and C
 map Y           y$
 
@@ -76,7 +78,7 @@ map <leader>r :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs /usr/local/bin
 map <leader>R :!rails runner 'puts $LOAD_PATH.join(" ")' \| xargs rdoc -f tags<CR>
 
 " Run test at cursor
-map <leader>T :RunFocusedTest<CR>
+map <leader>T :w<CR>:RunFocusedTest<CR>
 " Run all tests in file
 map <leader>t :w<CR>:RunTests<CR>
 
